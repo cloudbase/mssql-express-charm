@@ -1,0 +1,20 @@
+options:
+  version:
+    type: int
+    default: 2014
+    description: |
+      Microsoft SQL Server Express version to be installed by the charm.
+      The installer specific to this version is downloaded and installed
+      unless "installer-url" config option is specified.
+      Supported versions are: 2012, 2014.
+  sa-password:
+    type: string
+    description: |
+      Password used by the SA login. System administrator (SA) is a special
+      login assigned to the 'sysadmin' fixed server role and cannot be changed.
+  installer-url:
+    type: string
+    description: |
+      This option overrides the default value for download link when
+      selecting MSSQL version. If provided, this value will be used regardless
+      of selected version of MSSQL in the "version" config option.
