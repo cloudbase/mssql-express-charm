@@ -1,0 +1,18 @@
+name: mssql-express
+summary: "Microsoft SQL Server Express"
+maintainer: "Ionut Balutoiu <ibalutoiu@cloudbasesolutions.com>"
+description: |
+  Microsoft SQL Server Express is a version of Microsoft's SQL Server
+  relational database management system that is free to download,
+  distribute and use. It comprises a database specifically targeted
+  for embedded and smaller-scale applications.
+tags:
+  - windows
+  - databases
+series:
+  - win2012
+  - win2012r2
+  - win2016
+provides:
+  shared-db:
+    interface: mssql-shared
